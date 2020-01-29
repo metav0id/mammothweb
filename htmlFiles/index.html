@@ -22,7 +22,7 @@
 
                     <button class="btn btn-success" onclick="chooseContent('#Seite1')">Seite1</button>
                     <button class="btn btn-success" onclick="chooseContent('#Seite2')">Seite2</button>
-                    <button class="btn btn-success" onclick="chooseContent('#Seite3')">Seite3</button>
+                    <button class="btn btn-success" onclick="chooseContent('#club')">Club</button>
 
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -33,37 +33,33 @@
         </div>
     </nav>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../src/mammut1.jpg" class="d-block w-100 " alt="...">
+    <div class="inhalt" id="home">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../src/mammut1.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../src/mammut2.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../src/mammut3.jpg" class="d-block w-100 " alt="...">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="../src/mammut2.jpg" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="../src/mammut3.jpg" class="d-block w-100 " alt="...">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-
-    <div class="inhalt" id="Seite1">
-        <h1>Seite1</h1>
-        <p>Inhalt1</p>
     </div>
 
     <div class="inhalt" id="Seite2" >
@@ -71,8 +67,50 @@
         <p>Inhalt2</p>
     </div>
 
-    <div class="inhalt" id="Seite3">
-        <h1>Seite3</h1>
+    <div class="inhalt" id="club">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto">
+                    <div class="card card-signin flex-row my-5">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Registriere Dich Für Den Mammut Club</h5>
+                            <form class="form-signin">
+                                <div class="form-label-group">
+                                    <input type="text" id="inputUserame" class="form-control" placeholder="Benutzername" required autofocus>
+                                    <label for="inputUserame">Benutzername</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+                                    <label for="inputEmail">Email Adresse</label>
+                                </div>
+
+                                <hr>
+
+                                <div class="form-label-group">
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="Passwort" required>
+                                    <label for="inputPassword">Passwort</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Passwort" required>
+                                    <label for="inputConfirmPassword">Passwort bestätigen</label>
+                                </div>
+
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Registrieren</button>
+                                <a class="d-block text-center mt-2 small" href="#">Hast duschon einen Account, dann logg dich hier ein!</a>
+                                <hr class="my-4">
+                                <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign up with Google</button>
+                                <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign up with Facebook</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Letzte Aktivitäten</h2>
+            </div>
+        </div>
     </div>
 
 
@@ -112,7 +150,7 @@
     <!-- Footer -->
     <script>
         $ (".inhalt").hide();
-        $("#Seite1").show();
+        $("#home").show();
 
         function chooseContent(name){
             $ (".inhalt").hide();
