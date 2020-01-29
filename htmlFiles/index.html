@@ -8,30 +8,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../cssFiles/fixed.css">
 </head>
 <body>
-<header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="../src/mammoth.svg" alt="MAMMOTH" width="80" height="80" ></a>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="../src/mammoth.svg" alt="MAMMOTH" width="80" height="80" ></a>
 
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
 
-                    <button class="btn btn-success" onclick="chooseContent('#home')">Home</button>
-                    <button class="btn btn-success" onclick="chooseContent('#Seite2')">Seite2</button>
-                    <button class="btn btn-success" onclick="chooseContent('#club')">Club</button>
+                        <button class="btn btn-success" onclick="chooseContent('#home')">Home</button>
+                        <button class="btn btn-success" onclick="chooseContent('#events')">Events</button>
+                        <button class="btn btn-success" onclick="chooseContent('#club')">Club</button>
 
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suche</button>
-                </form>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suche</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <div class="inhalt" id="home">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -62,9 +64,72 @@
         </div>
     </div>
 
-    <div class="inhalt" id="Seite2" >
-        <h1>Seite2</h1>
-        <p>Inhalt2</p>
+    <div class="inhalt" id="events">
+        <div class="container">
+            <h1>Bevorstehende Events</h1>
+
+            <table class="table table-striped table-hover">
+                <thead class="bg-success text-white">
+                <tr >
+                    <th>Event</th>
+                    <th>Datum</th>
+                    <th>Ort</th>
+                    <th>Tickets</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Mahmud das Mammut live</td>
+                    <td>2020-02-12</td>
+                    <td>Köln Live Music Hall</td>
+                    <td>
+                        <button class="btn btn-success" >Buy Tickets</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mammut Messe</td>
+                    <td>2020-03-23</td>
+                    <td>Hamburg Messehalle</td>
+                    <td>
+                        <button class="btn btn-success" >Buy Tickets</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Berliner Mammut Fashion Week</td>
+                    <td>2020-05-12</td>
+                    <td>Berlin Brandenburger Tor</td>
+                    <td>
+                        <button class="btn btn-success" >Buy Tickets</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monster Mammut Freakhow</td>
+                    <td>2020-06-01</td>
+                    <td>Muenchen Europastadion</td>
+                    <td>
+                        <button class="btn btn-success" >Buy Tickets</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monster Fan Convention</td>
+                    <td>2020-07-08</td>
+                    <td>Bonn Messehalle</td>
+                    <td>
+                        <button class="btn btn-success" >Buy Tickets</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mammut Kostümfestival</td>
+                    <td>2020-07-24</td>
+                    <td>Hamburg Jungfernstieg</td>
+                    <td>
+                        <button class="btn btn-success" >Buy Tickets</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
     </div>
 
     <div class="inhalt" id="club">
@@ -97,7 +162,7 @@
                                     <label for="inputConfirmPassword">Passwort bestätigen</label>
                                 </div>
 
-                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Registrieren</button>
+                                <button class="btn btn-lg btn-success btn-block text-uppercase" type="submit">Registrieren</button>
                                 <a class="d-block text-center mt-2 small" href="#">Hast duschon einen Account, dann logg dich hier ein!</a>
                                 <hr class="my-4">
                                 <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign up with Google</button>
