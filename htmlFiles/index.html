@@ -13,7 +13,7 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <nav class="navbar navbar-expand-md navbar-dark bg-success">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="../src/mammoth.svg" alt="MAMMOTH" width="80" height="80" ></a>
 
@@ -23,9 +23,8 @@
 
                         <button class="btn btn-success" onclick="chooseContent('#home')">Home</button>
                         <button class="btn btn-success" onclick="chooseContent('#events')">Events</button>
-                        <button class="btn btn-success" onclick="chooseContent('#club')">Club</button>
-                        <button class="btn btn-success" onclick="chooseContent('#ratgeber')">Ratgeber</button>
                         <button class="btn btn-success" onclick="chooseContent('#gallery')">Galerie</button>
+                        <button class="btn btn-success" onclick="chooseContent('#club')">Club</button>
 
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -39,6 +38,7 @@
 
     <!-- Inhaltseiten ab hier  -->
 
+    <p></p>
     <div class="inhalt" id="home">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -153,7 +153,7 @@
     </div>
 
     <div class="inhalt" id="club">
-        <div class="container">
+        <div class="container mx-auto">
             <div class="row">
                 <div class="mx-auto">
                     <div class="card card-signin flex-row my-5">
@@ -192,112 +192,66 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <h2>Letzte Aktivitäten</h2>
+            <div class="row mx-auto">
+                <h1 class="text-center">Letzte Community Aktivitäten</h1>
+
+                <table class="table table-striped table-hover">
+                    <thead class="bg-success text-white">
+                    <tr >
+                        <th>Profilbild</th>
+                        <th>Benutzername</th>
+                        <th>Datum</th>
+                        <th>Aktivität</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><img class="profilbild" src="../src/Profilbilder/Mohsen.png" alt="Mohsen"></td>
+                        <td>MaMohsen</td>
+                        <td>2020-01-29</td>
+                        <td>Profilbild aktualisiert</td>
+                    </tr>
+                    <tr>
+                        <td><img class="profilbild" src="../src/Profilbilder/Volker.png" alt="Volker"></td>
+                        <td>Woll-Rüssel-Volker</td>
+                        <td>2020-01-28</td>
+                        <td>Profil registriert</td>
+                    </tr>
+                    <tr>
+                        <td><img class="profilbild" src="../src/Profilbilder/Oemer.png" alt="Ömer"></td>
+                        <td>Stosszahn-Ömer</td>
+                        <td>2020-01-26</td>
+                        <td>Mammutbild hochgeladen</td>
+                    </tr>
+                    <tr>
+                        <td><img class="profilbild" src="../src/Profilbilder/Rainer.png" alt="Rainer"></td>
+                        <td>Rainmut</td>
+                        <td>2020-01-25</td>
+                        <td>E-Card geilked</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-
-    <!-- Ratgeber für das Mammut-->
-    <div class="inhalt" id="ratgeber">
-
-        <div class="container">
-            <div class="col d-flex justify-content-center">
-                <div class="card" style="width: 40rem">
-                    <div class="card-header">
-                        <h1>Die Haltung</h1>
-                    </div>
-                    <img class="card-img-top" src="../src/mammutkoppel.jpg" alt="Mammut mit Pferden">
-                    <div class="card-body">
-                        <h3 class="card-title">Haltung auch mit Pferden problemlos möglich!</h3>
-                        <p class="card-text">
-                            Wer hätte das gedacht! Mammuts sind harmoniesüchtige Wesen und sie lieben die Gesellschaft.
-                            Sie verstehen sich mit so ziemlich allen Haustieren, ob Hund, Katze oder Maus. Viele
-                            unsere Mitglieder halten ihre Mammuts gemeinsam mit Pferden und das klappt bisher wunderbar.
-                            Mit Elefanten wäre das undenkbar!
-                            Einige Tipps für die artgerechte Haltung:
-
-                        <ul>
-                            <li>
-                                Mammuts lieben den Auslauf! Am Besten zusammen mit Pferden auf einer großen Pferdekoppel.
-                                Beide Tierarten kommen wunderbar miteinander klar, aber auch mit Artgenossen fühlt sich das Mammut wohl.
-                                Aber bloß keine Elefanten!
-                            </li>
-                            <li>
-                                Mammuts brauchen einen artgerechten Stall und und sollten dementsprechend in Gebäuden, die das 1,5-fache ihrer
-                                Körpergröße haben untergebracht werden.
-                            </li>
-                            <li>
-                                Mammuts schnarchen leider sehr laut. Ihr Rüssel macht dabei trompetenartige Geräusche. Aus diesem Grund sollte
-                                der Mammut-Stall möglichst nicht in der Nähe ihres Hauses oder der anderen Ställe sein.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <p></p>
-
-        <div class="container">
-            <div class="col d-flex justify-content-center">
-                 <div class="card" style="width: 40rem">
-                     <div class="card-header">
-                         <h1>Pflege für deinen Mammut</h1>
-                    </div>
-                     <img class="card-img-top" src="../src/mammut_zaehneputzen.jpg" alt="Mammut beim Zähneputzen">
-                 <div class="card-body">
-                <h3 class="card-title">Zahnpflege leicht gemacht!</h3>
-                <p class="card-text">
-                    Zahhnpflege bei einem Mammut ist nur halb so aufwendig, wie man zunächst vermuten mag.
-                    Hier sind einige Tipps wie du am Besten dabei vorgehst:
-                     <ol>
-                         <li>Beruhige das Mammut und bereite es auf das Zähneputzen vor. Streichle dazu mit der Bürste mehrmals
-                         unterm Bauch bevor es an die Zähne geht. Mammuts lieben das!</li>
-                         <li>Benutze niemals normale Menschenzahncreme! Es gibt spezielle Zahncremes für Mammuts im praktischen
-                         100 Liter-Pack.</li>
-                         <li>Singen! Ja, singen beruhigt die Mammuts. Am besten harmonische Melodien. Kein Rap, kein Metal!
-                         Summen funktioniert übrigens genauso gut.</li>
-                     </ol>
-                </p>
-                 </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-
 
     <div class="inhalt" id="gallery">
-
-
-
-
 
         <div>
             <p></p>
             <container>
-            <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 40rem">
-                <div class="card-header">
-                    Neu auf unserer Seite!
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Mammut eCards!</h5>
-                    <p class="card-text">Es geht nicht über einen guten Mammut-Spruch für jeden Tag. Teile deine Liebe zu unseren zottigen Kuschelbuddies
+                <div class="jumbotron mx-auto" style="width: 40rem">
+                    <h1 class="display-5">Brandneu auf unserer Mammutlove-Seite!</h1>
+                    <p class="lead">Unsere Mammut eCards-Galerie</p>
+                    <hr class="my-4">
+                    <p>Es geht nicht über einen guten Mammut-Spruch für jeden Tag. Teile deine Liebe zu unseren zottigen Kuschelbuddies
                         mit deinen Freunden und Verwandten, deinen Kollegen, Mitstudenten, Mithäftlingen, deinem Bundestagsabgeordneten, dem Stadtteilpolizisten,
                         dem Ortsvorsteher, dem Beziksamtsleiter, dem Java-Kurs-Trainer, dem Busfahrer, deiner Laienschauspieltruppe,
-                        der Tagesmutter deines Kindes und deinem Tierarzt. Schicke Ihnen eine dieser ECards oder poste sie zum Weiterposten auf deinem
-                        Facebookprofil. Sorge dafür, dass sie uns  hören! Die Zeit es Mammuts ist noch lange nicht vorbei. Sie hat gerade erst begonnen!</p>
+                        der Tagesmutter deines Kindes und deinem Tierarzt. Schicke Ihnen eine dieser E-Cards oder poste sie zum Weiterposten auf deinem
+                        Facebookprofil. Sorge dafür, dass sie uns  hören! Die Zeit des Mammuts ist noch lange nicht vorbei. Sie hat gerade erst begonnen!</p>
 
                 </div>
-            </div>
-            </div>
+
             </container>
 
             <p></p>
@@ -341,7 +295,7 @@
                         <p class="card-text">Was gibt es tolleres als ein Mammut? Eine ganze Mammut-Familie. Leider ein kostspieliger Traum,
                             den sich nicht jeder erfüllen kann. Aber wenn ihr es geschafft habt, denkt immer daran. Mammuts benötigen
                             ganz viel Liebe. Unter ihrem dichten, buschigen Fell und hinter ihren furchteinflößenden Stoßzähnen warten
-                            sensible Kreaturen, die ohne unserecemotionale Wärme unglücklich zu Grunde gehen würden. </p>
+                            sensible Kreaturen, die ohne unsere emotionale Wärme unglücklich zu Grunde gehen würden. </p>
                     </div>
                 </div>
             </div>
@@ -354,13 +308,42 @@
                     <div class="card-body">
                         <h5 class="card-title">Ein treuer Freund auch nach dem Ende</h5>
                         <p class="card-text">Irgendwann ist es auch für unser geliebtes Haustier Zeit zu gehen. Und auch dann ist
-                            unser Mammut für uns da. Das Vergraben eines Mammut kostet uns etwa 50.000 KCal, daamit ist das Gewicht,
-                            was wir uns in der Trauerfeier angefressen haben, flugs wieder runter.</p>
+                            unser Mammut für uns da. Das Vergraben eines Mammut kostet uns etwa 50.000 kcal, damit ist das Gewicht,
+                            was wir uns während der Trauerfeier angefressen haben, flugs wieder runter.</p>
                     </div>
                 </div>
             </div>
 
+        <p></p>
+
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 40rem">
+                <img class="card-img-top" src="../src/mammut-ecard-1-text.png" alt="Mammut">
+                <div class="card-body">
+                    <h5 class="card-title">Freunde sind Freunde</h5>
+                    <p class="card-text">Und zusammen können wir Dinge bewirken, die wir alleine niemals schaffen könnten.
+                    Dein Mammut ist mehr als ein Freund, mehr als zwei Freunde, es ist eine ganze Armee von Freunden.
+                    Dies realisierst du spätestens dann, wenn es im Alleingang den monströsen Stamm der riesigen Buche
+                    von den Trümmern deiner Garage zieht. - Nachdem es den Baum aus Versehen beim Gassisgehen umgerempelt hat.</p>
+                </div>
+            </div>
+        </div>
+
+        <p></p>
+
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 40rem">
+                <img class="card-img-top" src="../src/mammut-ecard-2-text.png" alt="Mammut">
+                <div class="card-body">
+                    <h5 class="card-title">Der Berg ruft</h5>
+                    <p class="card-text">Kaum ein Bild illustriert all das, was das Mammut ausmacht besser als dieses Bild.<br>
+                        - Hier ist Platz für deine eigenen Gedanken - </p>
+                </div>
+            </div>
+        </div>
     </div>
+    <p></p>
+
     </div>
 
     </div>
