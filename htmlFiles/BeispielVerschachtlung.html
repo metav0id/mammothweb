@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Buttons Buttons Buttons Buttons</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <p></p>
+        <div class="container">
+            <button class="btn btn-danger" onclick="chooseContent('#Seite1')">Seite1</button>
+            <button class="btn btn-warning" onclick="chooseContent('#Seite2')">Seite2</button>
+            <button class="btn btn-warning" onclick="chooseContent('#Seite3')">Seite3</button>
+        </div>
+
+        <div class="inhalt" id="Seite1">
+            <h1>Seite1</h1>
+            <p>Inhalt1</p>
+        </div>
+
+        <div class="inhalt" id="Seite2" >
+            <h1>Seite2</h1>
+            <p>Inhalt2</p>
+        </div>
+
+        <div class="inhalt" id="Seite3">
+            <h1>Seite3</h1>
+        </div>
+
+        <h1>Ende der Seite</h1>
+
+
+        <script>
+            $ (".inhalt").hide();
+            $("#Seite1").show();
+
+            function chooseContent(name){
+                $ (".inhalt").hide();
+                $(name).show();
+            }
+        </script>
+    </body>
+</html>
