@@ -11,33 +11,19 @@
 </head>
 <body>
 <header>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="../src/mammoth.svg" alt="MAMMOTH" width="80" height="80" ></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link2</a>
+                <ul class="navbar-nav mx-auto">
 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link4</a>
-                    </li>
+                    <button class="btn btn-success" onclick="chooseContent('#Seite1')">Seite1</button>
+                    <button class="btn btn-success" onclick="chooseContent('#Seite2')">Seite2</button>
+                    <button class="btn btn-success" onclick="chooseContent('#Seite3')">Seite3</button>
+
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -46,6 +32,22 @@
             </div>
         </div>
     </nav>
+
+
+    <div class="inhalt" id="Seite1">
+        <h1>Seite1</h1>
+        <p>Inhalt1</p>
+    </div>
+
+    <div class="inhalt" id="Seite2" >
+        <h1>Seite2</h1>
+        <p>Inhalt2</p>
+    </div>
+
+    <div class="inhalt" id="Seite3">
+        <h1>Seite3</h1>
+    </div>
+
 
     <!-- Footer -->
     <footer class="page-footer bg-success">
@@ -81,6 +83,14 @@
 
     </footer>
     <!-- Footer -->
+    <script>
+        $ (".inhalt").hide();
+        $("#Seite1").show();
 
+        function chooseContent(name){
+            $ (".inhalt").hide();
+            $(name).show();
+        }
+    </script>
 </body>
 </html>
