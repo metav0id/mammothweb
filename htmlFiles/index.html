@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MammutFreunde HamBurg e.V.</title>
+    <title>Mammutzüchterverein Hintertupfingen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,29 +12,38 @@
 </head>
 <body>
     <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-success">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="../src/mammut-logo-black.png" alt="MAMMOTH" width="120" height="80" ></a>
+        <nav class="navbar navbar-expand-md bg-success navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><img src="../src/mammoth.svg" alt="MAMMOTH" width="80" height="80" ></a>
 
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler btn-success" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
                         <button class="btn btn-success" onclick="chooseContent('#home')">Home</button>
+                    </li>
+                    <li class="nav-item">
                         <button class="btn btn-success" onclick="chooseContent('#events')">Events</button>
+                    </li>
+                    <li class="nav-item">
                         <button class="btn btn-success" onclick="chooseContent('#gallery')">Galerie</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-success" onclick="chooseContent('#ratgeber')">Ratgeber</button>
+                    </li>
+                    <li class="nav-item">
                         <button class="btn btn-success" onclick="chooseContent('#club')">Club</button>
-
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suche</button>
-                    </form>
-                </div>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
+
 
     <!-- Inhaltseiten ab hier  -->
 
@@ -207,7 +216,7 @@
                     <tbody>
                     <tr>
                         <td><img class="profilbild" src="../src/Profilbilder/Mohsen.png" alt="Mohsen"></td>
-                        <td>Mammut_Mohsen</td>
+                        <td>MaMohsen</td>
                         <td>2020-01-29</td>
                         <td>Profilbild aktualisiert</td>
                     </tr>
@@ -235,12 +244,77 @@
         </div>
     </div>
 
+    <!-- Ratgeber für das Mammut-->
+    <div class="inhalt" id="ratgeber">
+
+        <div class="container">
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 40rem">
+                    <div class="card-header">
+                        <h1>Die Haltung</h1>
+                    </div>
+                    <img class="card-img-top" src="../src/mammutkoppel.jpg" alt="Mammut mit Pferden">
+                    <div class="card-body">
+                        <h3 class="card-title">Haltung auch mit Pferden problemlos möglich!</h3>
+                        <p class="card-text">
+                            Wer hätte das gedacht! Mammuts sind harmoniesüchtige Wesen und sie lieben die Gesellschaft.
+                            Sie verstehen sich mit so ziemlich allen Haustieren, ob Hund, Katze oder Maus. Viele
+                            unsere Mitglieder halten ihre Mammuts gemeinsam mit Pferden und das klappt bisher wunderbar.
+                            Mit Elefanten wäre das undenkbar!
+                            Einige Tipps für die artgerechte Haltung:
+
+                        <ul>
+                            <li>
+                                Mammuts lieben den Auslauf! Am Besten zusammen mit Pferden auf einer großen Pferdekoppel.
+                                Beide Tierarten kommen wunderbar miteinander klar, aber auch mit Artgenossen fühlt sich das Mammut wohl.
+                                Aber bloß keine Elefanten!
+                            </li>
+                            <li>
+                                Mammuts brauchen einen artgerechten Stall und und sollten dementsprechend in Gebäuden, die das 1,5-fache ihrer
+                                Körpergröße haben untergebracht werden.
+                            </li>
+                            <li>
+                                Mammuts schnarchen leider sehr laut. Ihr Rüssel macht dabei trompetenartige Geräusche. Aus diesem Grund sollte
+                                der Mammut-Stall möglichst nicht in der Nähe ihres Hauses oder der anderen Ställe sein.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p></p>
+
+        <div class="container">
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 40rem">
+                    <div class="card-header">
+                        <h1>Pflege für deinen Mammut</h1>
+                    </div>
+                    <img class="card-img-top" src="../src/mammut_zaehneputzen.jpg" alt="Mammut beim Zähneputzen">
+                    <div class="card-body">
+                        <h3 class="card-title">Zahnpflege leicht gemacht!</h3>
+                        <p class="card-text">
+                            Zahhnpflege bei einem Mammut ist nur halb so aufwendig, wie man zunächst vermuten mag.
+                            Hier sind einige Tipps wie du am Besten dabei vorgehst:
+                        <ol>
+                            <li>Beruhige das Mammut und bereite es auf das Zähneputzen vor. Streichle dazu mit der Bürste mehrmals
+                                unterm Bauch bevor es an die Zähne geht. Mammuts lieben das!</li>
+                            <li>Benutze niemals normale Menschenzahncreme! Es gibt spezielle Zahncremes für Mammuts im praktischen
+                                100 Liter-Pack.</li>
+                            <li>Singen! Ja, singen beruhigt die Mammuts. Am besten harmonische Melodien. Kein Rap, kein Metal!
+                                Summen funktioniert übrigens genauso gut.</li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <div class="inhalt" id="gallery">
-
-
-
-
-
 
         <div>
             <p></p>
@@ -348,6 +422,7 @@
         </div>
     </div>
     <p></p>
+
     </div>
 
     </div>
