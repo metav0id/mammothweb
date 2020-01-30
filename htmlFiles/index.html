@@ -42,6 +42,9 @@
                     <li class="nav-item">
                         <button class="btn btn-success" onclick="chooseContent('#shop')">Shop</button>
                     </li>
+                    <li class="nav-item">
+                        <button class="btn btn-success" onclick="chooseContent('#faq')">FAQ</button>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -63,7 +66,7 @@
                     <img src="../src/mammut1.jpg" class="d-block w-100 " alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../src/mammut2.jpg" class="d-block w-100 " alt="...">
+                    <img src="../src/mammut2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="../src/mammut3.jpg" class="d-block w-100 " alt="...">
@@ -627,6 +630,53 @@
         <!-- /.row -->
 
     </div>
+    </div>
+
+    <!--    FAQ Sektion-->
+    <div class="inhalt" id="faq">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Frage 1
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faq">
+                <div class="card-body">
+                    Antwort 1
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Frage 2
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq">
+                <div class="card-body">
+                    Antwort 2
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Frage 3
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq">
+                <div class="card-body">
+                    Antwort 3
+                </div>
+            </div>
+        </div>
     </div>
 
 
