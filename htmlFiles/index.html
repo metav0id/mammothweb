@@ -146,7 +146,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Monster Fan Convention</td>
+                    <td>Mammut Fan Convention</td>
                     <td>2020-07-08</td>
                     <td>Bonn Messehalle</td>
                     <td>
@@ -488,6 +488,8 @@
     <script>
         $ (".inhalt").hide();
         $("#home").show();
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
         function chooseContent(name){
             $ (".inhalt").hide();
