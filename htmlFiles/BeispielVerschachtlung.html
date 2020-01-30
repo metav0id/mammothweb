@@ -30,14 +30,15 @@
 
         <div class="inhalt" id="Seite3">
             <h1>Seite3</h1>
+            <p>Inhalt3</p>
         </div>
-
-        <h1>Ende der Seite</h1>
 
 
         <script>
             $ (".inhalt").hide();
-            $("#Seite1").show();
+            $("#home").show();
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
             function chooseContent(name){
                 $ (".inhalt").hide();
