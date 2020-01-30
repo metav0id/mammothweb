@@ -1,4 +1,5 @@
-body {
+body, a
+{
     cursor: url(../Src/MausZeiger.gif), auto;
 }
 
