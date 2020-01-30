@@ -1,4 +1,4 @@
-body, button:hover, a {
+body, button:hover,  a {
     cursor: url(../Src/MausZeiger.gif), auto;
 }
 
