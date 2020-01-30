@@ -6,6 +6,10 @@ body {
     height: 80vh;
 }
 
+.shop-img {
+    max-height: 350px;
+}
+
 .news-img {
     max-height: 150px;
     width: 100%;
